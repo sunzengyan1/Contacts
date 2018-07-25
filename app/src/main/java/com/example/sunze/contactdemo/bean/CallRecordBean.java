@@ -1,4 +1,4 @@
-package com.example.sunze.contactdemo;
+package com.example.sunze.contactdemo.bean;
 
 /**
  * Created by Dell on 2018/1/25.

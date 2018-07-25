@@ -1,4 +1,4 @@
-package com.example.sunze.contactdemo;
+package com.example.sunze.contactdemo.bean;
 
 /**
  * Created by sunze on 2017/8/7.

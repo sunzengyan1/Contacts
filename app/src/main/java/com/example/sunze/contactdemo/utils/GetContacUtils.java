@@ -1,4 +1,4 @@
-package com.example.sunze.contactdemo;
+package com.example.sunze.contactdemo.utils;
 
 import android.Manifest;
 import android.app.Activity;
@@ -9,6 +9,9 @@ import android.provider.CallLog;
 import android.provider.ContactsContract;
 import android.support.v4.app.ActivityCompat;
 import android.util.Log;
+
+import com.example.sunze.contactdemo.bean.CallRecordBean;
+import com.example.sunze.contactdemo.bean.ContactBean;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

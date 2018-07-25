@@ -1,4 +1,4 @@
-package com.example.sunze.contactdemo;
+package com.example.sunze.contactdemo.ui;
 
 import android.Manifest;
 import android.content.Intent;
@@ -20,6 +20,13 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Toast;
 
+import com.example.sunze.contactdemo.adapter.ContactAdapter;
+import com.example.sunze.contactdemo.utils.GetContacUtils;
+import com.example.sunze.contactdemo.listener.OnItemClickListener;
+import com.example.sunze.contactdemo.R;
+import com.example.sunze.contactdemo.bean.CallRecordBean;
+import com.example.sunze.contactdemo.bean.ContactBean;
+import com.example.sunze.contactdemo.listener.onDialogClickListener;
 import com.umeng.analytics.MobclickAgent;
 
 import java.util.List;

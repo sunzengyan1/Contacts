@@ -1,4 +1,4 @@
-package com.example.sunze.contactdemo;
+package com.example.sunze.contactdemo.adapter;
 
 import android.app.Activity;
 import android.net.Uri;
@@ -7,6 +7,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.sunze.contactdemo.listener.OnItemClickListener;
+import com.example.sunze.contactdemo.R;
+import com.example.sunze.contactdemo.bean.ContactBean;
 
 import java.util.List;
 
@@ -27,7 +31,7 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ContactV
 
     @Override
     public ContactViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = View.inflate(activity,R.layout.rv_item_contact,null);
+        View view = View.inflate(activity, R.layout.rv_item_contact,null);
         ContactViewHolder holder = new ContactViewHolder(view,onItemClickListener);
         return holder;
     }
