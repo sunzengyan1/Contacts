@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     showToast("此联系人没有号码");
                 }
-//                requestRuntimePermission(Manifest.permission.READ_CALL_LOG, permissionCallRecordRequestCode);
+                requestRuntimePermission(Manifest.permission.READ_CALL_LOG, permissionCallRecordRequestCode);
             }
         });
     }

@@ -93,9 +93,11 @@ public class GetContacUtils {
                 CallLog.Calls.CACHED_NAME,
                 CallLog.Calls.TYPE,
                 CallLog.Calls.DATE,
+                CallLog.Calls.DURATION
         }, null, null, null);
         callRecordBeanList = new ArrayList<>();
         if (cursor != null) {
+            Log.i("查询到的数据", "getCallRecord: cursor="+cursor.toString());
             try {
                 while (cursor.moveToNext()) {
                     CallRecordBean callRecordBean = new CallRecordBean();
@@ -103,7 +105,9 @@ public class GetContacUtils {
                     callRecordBean.setNumber(cursor.getString(1));
                     callRecordBean.setType(getCallType(cursor.getInt(2)));
                     callRecordBean.setDate(formatDate(cursor.getLong(3)));
+                    callRecordBean.setDuration(cursor.getLong(4)+"");
                     Log.i("查询到的数据", "getCallRecord: " + callRecordBean.toString());
+                    callRecordBeanList.add(callRecordBean);
                 }
             } catch (Exception e) {
                 e.printStackTrace();

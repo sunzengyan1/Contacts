@@ -9,6 +9,16 @@ public class CallRecordBean {
     private String name;
     private String type;
     private String date;
+    private String duration;
+
+    public String getDuration() {
+        return duration;
+    }
+
+    public void setDuration(String duration) {
+
+        this.duration = duration;
+    }
 
     public String getNumber() {
         return number;
